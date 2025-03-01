@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: lightblue;
+    color: aliceblue;
+}
+
+.card{
+      background: url(https://cdn.pixabay.com/photo/2015/10/09/00/55/lotus-978659_1280.jpg);
+      background-size: cover;
+      border-radius: 5px;
+      width: 500px;
+      height: 300px;
+      padding: 1rem;
+      margin: 1rem;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      transition: all 2s ease;
+}
+
+h2{
+    margin: 1rem;
+}
+
+.card:nth-child(even){
+    transform: translateX(-200%) rotate(90deg) scale(0.1);
+}
+
+.card:nth-child(odd){
+    transform: translateX(-200%) rotate(90deg) scale(0.1);
+}
+
+.card.slidingIn{
+    transform: translateX(0) rotate(0deg) scale(1);
+}
+
